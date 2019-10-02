@@ -27,8 +27,8 @@ def new_donations():
 		try:
 			donor= Donor.select().where(Donor.name == name).get()
 		except Donor.DoesNotExist as e: 
-			new_donor = Donor(name=name)
-			new_donor.save()
+			donor = Donor(name=name)
+			donor.save()
 		
 
 		donation_made = Donation(donor=donor, value=new_donation)
