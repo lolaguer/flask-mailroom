@@ -1,0 +1,11 @@
+{% extends 'base.jinja2' %}
+
+{% block subtitle %}You need to login in to add a new donations{% endblock subtitle %}
+
+{% block content %}
+	<form method="POST">
+   		<label for="username"> Username: </label><input type="text" id="username" name="username">
+   		<label for="password"> Password: </label><input type="int" id="password" name="password">
+   		<input type="submit" value="login">
+	</form>
+{% endblock content %}
